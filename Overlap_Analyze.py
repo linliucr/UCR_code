@@ -1,10 +1,10 @@
 import string
 
-
+count=0
 # for 1bp overlap
 with open('bedfile1','r') as f1, open('bedfile2','r') as f2:
 
-    count=0
+
 
     for i in f1:
         for j in f2:
@@ -22,8 +22,6 @@ print(count)
 # for 8bp overlap            
 with open('bedfile1','r') as f1, open('bedfile2','r') as f2:
 
-    count=0
-
     for i in f1:
         for j in f2:
             info1=i.split('\t')
@@ -39,8 +37,6 @@ print(count)
 
 # for 30bp overlap
 with open('bedfile1','r') as f1, open('bedfile2','r') as f2:
-
-    count=0
 
     for i in f1:
         for j in f2:
